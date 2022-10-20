@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Teste de imagens flexíveis</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+        <!--em picture, a ordem das imagens deve ser sempre da menor para a maior-->
+    </picture>
+
+    <h1>Reproduzindo audios</h1>
+    <audio src="media/86 EIGHTY-SIX - Ending Full『Avid』by SawanoHiroyuki[nZk]_mizuki(MP3_160K).mp3" controls></audio>
+    <audio src="media/WhatsApp Audio 2022-05-16 at 08.40.35.mpeg" controls></audio>
+    
+    <audio preload="metadata" controls loop>
+        <source src="media/86 EIGHTY-SIX - Ending Full『Avid』by SawanoHiroyuki[nZk]_mizuki(MP3_160K).mp3" type="audio/mpeg">
+        <source src="media/WhatsApp Audio 2022-05-16 at 08.40.35.mpeg" type="audio/ogg">
+        <source src="media/WhatsApp Audio 2022-05-16 at 08.40.35.mpeg" type="audio/wav">
+        <p>não foi possível reproduzir o arquivo, gostaria de fazer o download?</p>
+        
+    </audio>
+
+    <h1>Videos</h1>
+    <p>Com hospedagem local:</p>
+    <video src="media/video.mp4" controls width="600" poster="imagens/foto-p.png" loop></video>
+
+    <video>
+        <source src="" type=""> <!--para colocar vários formatos de vídeo diferentes por questões de compatibilidade-->
+    </video>
+
+    <p>videos do youtube:</p>
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/voAxfo_AtPY?list=WL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <iframe width="900" height="506" src="https://www.youtube.com/embed/nE2Mg3Q0rac" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
